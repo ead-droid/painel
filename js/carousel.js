@@ -125,7 +125,7 @@ const Carousel = (() => {
 
   /* ── Transição entre slides ── */
   function goTo(newIndex, force = false) {
-    if ((isAnimating && !force) || newIndex === activeIndex) return;
+    if ((isAnimating && !force) || (newIndex === activeIndex && !force)) return;
     isAnimating = true;
 
     clearTimeout(timer);
