@@ -3,10 +3,11 @@
 ════════════════════════════════════════ */
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: minmax(0, 1.15fr) minmax(380px, 0.85fr);
   gap: 18px;
   align-items: stretch;
   height: 100%;
+  min-height: 0;
 }
 
 .hero-copy {
@@ -14,10 +15,23 @@
   flex-direction: column;
   justify-content: center;
   gap: 16px;
+  min-width: 0;
 }
 
-.hero-copy h1 { margin: 0; font-size: 66px; line-height: 0.98; }
-.hero-copy p  { margin: 0; max-width: 720px; color: rgba(236,243,255,0.88); font-size: 21px; line-height: 1.55; }
+.hero-copy h1 {
+  margin: 0;
+  font-size: clamp(54px, 4.1vw, 66px);
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.hero-copy p  {
+  margin: 0;
+  max-width: 720px;
+  color: rgba(236,243,255,0.88);
+  font-size: clamp(18px, 1.35vw, 21px);
+  line-height: 1.55;
+}
 
 .stats-panel {
   padding: 22px;
@@ -25,11 +39,16 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 16px;
+  min-width: 0;
+  min-height: 0;
 }
 
 .number-block { display: flex; flex-direction: column; gap: 10px; }
 
-.number-block strong { font-size: 74px; line-height: 1; }
+.number-block strong {
+  font-size: clamp(60px, 4.6vw, 74px);
+  line-height: 1;
+}
 
 .number-label { color: rgba(255,255,255,0.72); font-size: 17px; }
 

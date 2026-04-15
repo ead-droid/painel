@@ -156,6 +156,12 @@ img { max-width: 100%; display: block; }
   min-height: 0;
 }
 
+.slide-body {
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 .slide-content.fullscreen {
   grid-template-rows: 1fr;
 }
