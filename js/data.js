@@ -542,89 +542,66 @@ const slides = [
           <div class='rg2-cell rg2-cell-val rg2-cell-accent'>${item.y2026}</div>
         </div>`).join('');
 
-      const productCards = products.map((item, i) => `
-        <div class='rg2-pcard' data-anim='fade-up' data-delay='${(0.28 + i * 0.07).toFixed(2)}'>
-          <div class='rg2-pcard-top'>
-            <span class='rg2-pcard-name'>${item.name}</span>
-            <strong class='rg2-pcard-num count-up' data-target='${item.y2026}'>0</strong>
-          </div>
-          <div class='rg2-pcard-years'>
-            <div class='rg2-py'><small>2023</small><span>${item.y2023}</span></div>
-            <div class='rg2-py'><small>2024</small><span>${item.y2024}</span></div>
-            <div class='rg2-py'><small>2025</small><span>${item.y2025}</span></div>
-            <div class='rg2-py rg2-py--hi'><small>2026</small><span>${item.y2026}</span></div>
-          </div>
-        </div>`).join('');
+      const productTags = products.map(p =>
+        `<span class='rg2-ptag'>${p.name}</span>`).join('');
 
       return `
       <div class='rg2-layout'>
-        <div class='rg2-glow-orb'></div>
-        <div class='rg2-glow-orb rg2-glow-orb--b'></div>
+        <div class='rg2-bg-grid'></div>
+        <div class='rg2-bg-glow'></div>
+        <div class='rg2-fade-bottom'></div>
 
-        <div class='rg2-header' data-anim='fade-down' data-delay='0.06'>
-          <div class='rg2-header-left'>
-            <span class='rg2-badge'>Coordenadoria de Regula&ccedil;&atilde;o e Supervis&atilde;o da Educa&ccedil;&atilde;o Superior</span>
-            <h2 class='rg2-title'>Regula&ccedil;&atilde;o e supervis&atilde;o da educa&ccedil;&atilde;o superior</h2>
-          </div>
-          <div class='rg2-header-right'>
-            <span class='rg2-tag-preview'>Previs&atilde;o 2026</span>
-          </div>
+        <div class='rg2-main' data-anim='fade-up' data-delay='0.06'>
+          <span class='rg2-eyebrow' data-anim='fade-down' data-delay='0.08'>Coordenadoria de Regula&ccedil;&atilde;o e Supervis&atilde;o da Educa&ccedil;&atilde;o Superior</span>
+          <h2 class='rg2-headline' data-anim='fade-up' data-delay='0.14'>
+            Regulando e fortalecendo<br>a educa&ccedil;&atilde;o superior<br><span class='rg2-headline-hi'>em Mato Grosso</span>
+          </h2>
+          <p class='rg2-lead' data-anim='fade-up' data-delay='0.22'>Produtos de avalia&ccedil;&atilde;o, credenciamento, forma&ccedil;&atilde;o e publica&ccedil;&atilde;o cient&iacute;fica acompanhados com crescimento expressivo de 2023 a 2026.</p>
+          <div class='rg2-ptags' data-anim='fade-up' data-delay='0.28'>${productTags}</div>
         </div>
 
-        <div class='rg2-body'>
-          <div class='rg2-left' data-anim='fade-right' data-delay='0.12'>
-
-            <div class='rg2-stat-hero'>
-              <small>Total de entregas</small>
-              <strong class='count-up' data-target='${totals.y2026}'>0</strong>
-              <span>em 2026</span>
-            </div>
-
-            <div class='rg2-growth-card' data-anim='fade-up' data-delay='0.18'>
-              <div class='rg2-growth-top'>
-                <svg class='rg2-spark' viewBox='0 0 72 56' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                  <defs>
-                    <linearGradient id='sg1' x1='0' y1='0' x2='0' y2='1'>
-                      <stop offset='0%' stop-color='#60e0a0'/>
-                      <stop offset='100%' stop-color='rgba(40,180,110,0.15)'/>
-                    </linearGradient>
-                    <linearGradient id='sg2' x1='0' y1='0' x2='0' y2='1'>
-                      <stop offset='0%' stop-color='#a0ffcc'/>
-                      <stop offset='100%' stop-color='rgba(60,220,140,0.25)'/>
-                    </linearGradient>
-                  </defs>
-                  <rect x='0'  y='34' width='14' height='22' rx='3' fill='url(#sg1)' opacity='0.5'/>
-                  <rect x='19' y='22' width='14' height='34' rx='3' fill='url(#sg1)' opacity='0.68'/>
-                  <rect x='38' y='10' width='14' height='46' rx='3' fill='url(#sg1)' opacity='0.84'/>
-                  <rect x='57' y='0'  width='14' height='56' rx='3' fill='url(#sg2)'/>
-                  <polyline points='7,34 26,22 45,10 64,1' stroke='#60e0a0' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' opacity='0.60'/>
-                  <circle cx='64' cy='1' r='4' fill='#a0ffcc'/>
-                </svg>
-                <div>
-                  <span class='rg2-pct'>+157%</span>
-                  <small>crescimento<br>desde 2023</small>
-                </div>
-              </div>
-            </div>
-
-            <div class='rg2-totals-strip' data-anim='fade-up' data-delay='0.22'>
-              <div class='rg2-tot'><strong>${totals.y2023}</strong><small>2023</small></div>
-              <div class='rg2-tot-arrow'>&#8594;</div>
-              <div class='rg2-tot'><strong>${totals.y2024}</strong><small>2024</small></div>
-              <div class='rg2-tot-arrow'>&#8594;</div>
-              <div class='rg2-tot'><strong>${totals.y2025}</strong><small>2025</small></div>
-              <div class='rg2-tot-arrow'>&#8594;</div>
-              <div class='rg2-tot rg2-tot--hi'><strong>${totals.y2026}</strong><small>2026</small></div>
-            </div>
-
-            <p class='rg2-desc' data-anim='fade-up' data-delay='0.26'>Acompanhamento de 4 produtos estrat&eacute;gicos de regula&ccedil;&atilde;o, credenciamento e qualifica&ccedil;&atilde;o da educa&ccedil;&atilde;o superior em Mato Grosso.</p>
+        <div class='rg2-bottom' data-anim='fade-up' data-delay='0.32'>
+          <div class='rg2-card-wide'>
+            <strong class='rg2-card-title'>Leitura institucional</strong>
+            <p class='rg2-card-text'>A Coordenadoria registra evolu&ccedil;&atilde;o cont&iacute;nua em seus produtos entre 2023 e 2026, com destaque para a Avalia&ccedil;&atilde;o de Cursos Superiores — que saltou de 10 para 29 a&ccedil;&otilde;es — e Forma&ccedil;&atilde;o Continuada, que passou de 3 para 6 produtos previstos.</p>
           </div>
 
-          <div class='rg2-right' data-anim='fade-left' data-delay='0.14'>
-            <div class='rg2-pcards-label'>Produtos acompanhados</div>
-            <div class='rg2-pcards'>
-              ${productCards}
+          <div class='rg2-card-stat'>
+            <strong class='rg2-stat-num count-up' data-target='${totals.y2026}'>0</strong>
+            <span class='rg2-stat-label'>entregas previstas<br>em 2026</span>
+          </div>
+
+          <div class='rg2-card-stat rg2-card-stat--green'>
+            <div class='rg2-stat-row'>
+              <svg class='rg2-spark' viewBox='0 0 72 56' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <defs>
+                  <linearGradient id='sg1' x1='0' y1='0' x2='0' y2='1'>
+                    <stop offset='0%' stop-color='#60e0a0'/><stop offset='100%' stop-color='rgba(40,180,110,0.15)'/>
+                  </linearGradient>
+                  <linearGradient id='sg2' x1='0' y1='0' x2='0' y2='1'>
+                    <stop offset='0%' stop-color='#a0ffcc'/><stop offset='100%' stop-color='rgba(60,220,140,0.20)'/>
+                  </linearGradient>
+                </defs>
+                <rect x='0'  y='34' width='14' height='22' rx='3' fill='url(#sg1)' opacity='0.5'/>
+                <rect x='19' y='22' width='14' height='34' rx='3' fill='url(#sg1)' opacity='0.68'/>
+                <rect x='38' y='10' width='14' height='46' rx='3' fill='url(#sg1)' opacity='0.84'/>
+                <rect x='57' y='0'  width='14' height='56' rx='3' fill='url(#sg2)'/>
+                <polyline points='7,34 26,22 45,10 64,1' stroke='#60e0a0' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' opacity='0.60'/>
+                <circle cx='64' cy='1' r='4' fill='#a0ffcc'/>
+              </svg>
+              <strong class='rg2-stat-num rg2-stat-num--green'>+157%</strong>
             </div>
+            <span class='rg2-stat-label'>crescimento<br>desde 2023</span>
+          </div>
+
+          <div class='rg2-card-stat rg2-card-stat--years'>
+            <div class='rg2-years-col'>
+              <div class='rg2-yrow'><small>2023</small><strong>${totals.y2023}</strong></div>
+              <div class='rg2-yrow'><small>2024</small><strong>${totals.y2024}</strong></div>
+              <div class='rg2-yrow'><small>2025</small><strong>${totals.y2025}</strong></div>
+              <div class='rg2-yrow rg2-yrow--hi'><small>2026 &#9733;</small><strong>${totals.y2026}</strong></div>
+            </div>
+            <span class='rg2-stat-label'>total de<br>entregas/ano</span>
           </div>
         </div>
       </div>`;
