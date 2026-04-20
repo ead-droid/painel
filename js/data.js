@@ -523,7 +523,7 @@ const slides = [
       return `
       <div style="height:100%;padding:16px 22px;box-sizing:border-box;background:transparent;overflow:hidden;position:relative;">
         <div style="position:absolute;inset:0;background:radial-gradient(circle at 20% 18%, rgba(15,66,126,0.22) 0%, rgba(15,66,126,0) 28%), radial-gradient(circle at 82% 24%, rgba(15,66,126,0.12) 0%, rgba(15,66,126,0) 24%), linear-gradient(135deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0) 42%);"></div>
-        <div style="position:relative;z-index:1;height:100%;border-radius:26px;background:linear-gradient(180deg, rgba(8,22,53,0.62) 0%, rgba(2,32,60,0.56) 52%, rgba(3,44,79,0.64) 100%), url('assets/SUP.png') center bottom / cover no-repeat;box-shadow:0 14px 28px rgba(0,0,0,0.20);padding:22px 26px 16px;display:grid;grid-template-rows:auto minmax(0,1fr) auto;row-gap:16px;box-sizing:border-box;overflow:hidden;border:1px solid rgba(255,255,255,0.05);">
+        <div style="position:relative;z-index:1;height:100%;border-radius:26px;background:linear-gradient(180deg, #081635 0%, #02203c 52%, #032c4f 100%);box-shadow:0 14px 28px rgba(0,0,0,0.20);padding:22px 26px 16px;display:grid;grid-template-rows:auto minmax(0,1fr) auto;row-gap:16px;box-sizing:border-box;overflow:hidden;border:1px solid rgba(255,255,255,0.05);">
           <div style="display:grid;grid-template-columns:minmax(0, 1fr) 200px;align-items:start;column-gap:22px;">
             <div style="display:flex;flex-direction:column;align-items:flex-start;gap:9px;max-width:840px;min-width:0;">
               <div style="display:inline-flex;align-items:center;padding:9px 16px;border-radius:999px;border:1px solid rgba(15,66,126,0.55);background:rgba(15,66,126,0.18);color:#ffffff;font:700 11px/1 'Inter', 'Segoe UI', sans-serif;letter-spacing:1.35px;text-transform:uppercase;">Coordenadoria de Regulação e Supervisão da Educação Superior</div>
@@ -608,133 +608,6 @@ const slides = [
     }
   },
   {
-    id: 'coordenadoria-fiscalizacao',
-    theme: 'light',
-    fullscreen: true,
-    duration: 18000,
-    enterAnim: 'enter-zoom',
-    exitAnim: 'exit-zoom',
-    eyebrow: '',
-    title: '',
-    subtitle: '',
-    accent: 'linear-gradient(90deg, #1f5edc, #5ab4ff)',
-    render() {
-      const rows2026 = [
-        { label: 'Gestão Documental', value: 700, highlight: true },
-        { label: 'Atendimento ao Cidadão', value: 100, highlight: false },
-        { label: 'Cursos supervisionados (ETEC)', value: 60, highlight: false },
-        { label: 'Cursos Fiscalizados (Privadas)', value: 10, highlight: false },
-        { label: 'Elaboração de Normativas', value: 2, highlight: false },
-      ];
-
-      const yearlyTotals = [
-        { year: '2023', total: 28 },
-        { year: '2024', total: 48 },
-        { year: '2025', total: 747 },
-        { year: '2026', total: 872 },
-      ];
-
-      const total2025 = 747;
-      const total2026 = 872;
-      const maxBar = Math.max(...rows2026.map((item) => item.value));
-      const maxMini = Math.max(...yearlyTotals.map((item) => item.total));
-
-      const mainBars = rows2026.map((item, index) => {
-        const width = Math.max((item.value / maxBar) * 100, 3);
-        const fill = item.highlight
-          ? 'linear-gradient(90deg, #2f9f66, #79e0a2)'
-          : 'linear-gradient(90deg, #245fe0, #5fb7ff)';
-        const tone = item.highlight ? '#1f7f50' : '#13356d';
-        const glow = item.highlight ? '0 8px 16px rgba(47,159,102,0.30)' : '0 8px 16px rgba(36,95,224,0.22)';
-        return `
-          <div style="display:grid;grid-template-columns:minmax(190px, 0.95fr) minmax(0, 2.2fr) 70px;align-items:center;gap:12px;min-height:42px;" data-anim="fade-up" data-delay="${(0.16 + index * 0.06).toFixed(2)}">
-            <div style="color:${tone};font:700 16px/1.2 'Manrope',sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${item.label}</div>
-            <div style="height:22px;border-radius:999px;background:#dfe7f5;overflow:hidden;position:relative;">
-              <div style="height:100%;width:${width.toFixed(2)}%;background:${fill};border-radius:inherit;box-shadow:${glow};"></div>
-            </div>
-            <div style="text-align:right;color:${tone};font:800 24px/1 'Manrope',sans-serif;letter-spacing:-0.02em;">${item.value}</div>
-          </div>`;
-      }).join('');
-
-      const miniBars = yearlyTotals.map((item, index) => {
-        const h = Math.max((item.total / maxMini) * 124, 8);
-        const is2026 = item.year === '2026';
-        return `
-          <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;" data-anim="fade-up" data-delay="${(0.22 + index * 0.06).toFixed(2)}">
-            <div style="color:${is2026 ? '#1b4ea8' : '#49628f'};font:800 16px/1 'Manrope',sans-serif;">${item.total}</div>
-            <div style="width:38px;height:130px;border-radius:14px;background:#e8eef9;display:flex;align-items:flex-end;padding:4px;">
-              <div style="width:100%;height:${h.toFixed(2)}px;border-radius:10px;background:${is2026 ? 'linear-gradient(180deg,#1f5edc,#4aa8ff)' : 'linear-gradient(180deg,#8db0ea,#b8cdf2)'};"></div>
-            </div>
-            <div style="color:#2d456d;font:700 13px/1 'Manrope',sans-serif;letter-spacing:0.04em;">${item.year}</div>
-          </div>`;
-      }).join('');
-
-      const trendPoints = [
-        { x: 12.0,  y: 73.0 },  // 2023
-        { x: 37.33, y: 59.0 },  // 2024
-        { x: 62.67, y: 46.0 },  // 2025
-        { x: 88.0,  y: 34.0 },  // 2026
-      ];
-
-      const [p0, p1, p2, p3] = trendPoints;
-      const trendPath = [
-        `M ${p0.x.toFixed(2)} ${p0.y.toFixed(2)}`,
-        `C ${(p0.x + 6.8).toFixed(2)} ${(p0.y - 2.8).toFixed(2)}, ${(p1.x - 8.0).toFixed(2)} ${(p1.y + 2.4).toFixed(2)}, ${p1.x.toFixed(2)} ${p1.y.toFixed(2)}`,
-        `C ${(p1.x + 7.2).toFixed(2)} ${(p1.y - 2.2).toFixed(2)}, ${(p2.x - 8.5).toFixed(2)} ${(p2.y + 2.8).toFixed(2)}, ${p2.x.toFixed(2)} ${p2.y.toFixed(2)}`,
-        `C ${(p2.x + 7.8).toFixed(2)} ${(p2.y - 1.8).toFixed(2)}, ${(p3.x - 8.2).toFixed(2)} ${(p3.y + 2.2).toFixed(2)}, ${p3.x.toFixed(2)} ${p3.y.toFixed(2)}`
-      ].join(' ');
-
-      return `
-      <div style="height:100%;padding:16px 22px;box-sizing:border-box;background:transparent;">
-        <div style="height:100%;border-radius:28px;background:linear-gradient(180deg,#f9fbff 0%,#f1f6ff 100%);border:1px solid rgba(30,78,165,0.12);box-shadow:0 20px 38px rgba(18,45,98,0.10);padding:18px 22px 18px;display:grid;grid-template-rows:auto auto minmax(0,1fr);gap:14px;overflow:hidden;">
-          <div style="display:flex;flex-direction:column;gap:10px;">
-            <div style="display:inline-flex;align-items:center;width:fit-content;padding:7px 13px;border-radius:999px;border:1px solid rgba(31,94,220,0.20);background:rgba(31,94,220,0.08);color:#1f5edc;font:800 10px/1 'Manrope',sans-serif;letter-spacing:0.14em;text-transform:uppercase;">Ações da Coordenadoria de Fiscalização</div>
-            <h2 style="margin:0;color:#0f2f63;font:800 50px/0.95 'Manrope',sans-serif;letter-spacing:-0.03em;">COORDENADORIA DE FISCALIZAÇÃO</h2>
-            <p style="margin:0;color:#4d6288;font:700 20px/1.2 'Manrope',sans-serif;">Evolução dos produtos e projeção anual | 2023 a 2026</p>
-          </div>
-
-          <div style="display:grid;grid-template-rows:auto minmax(0,1fr);gap:12px;min-height:0;">
-            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
-              <div style="width:100%;border-radius:18px;background:#ffffff;border:1px solid rgba(31,94,220,0.14);box-shadow:0 10px 20px rgba(22,56,116,0.08);padding:12px 14px;min-height:96px;display:grid;grid-template-rows:auto 1fr;">
-                <div style="color:#5a6f94;font:800 11px/1 'Manrope',sans-serif;letter-spacing:0.12em;text-transform:uppercase;">Produtos monitorados</div>
-                <div style="margin-top:6px;min-height:44px;display:flex;align-items:flex-end;color:#14366f;font:800 42px/0.9 'Manrope',sans-serif;font-variant-numeric:tabular-nums;">5</div>
-              </div>
-              <div style="width:100%;border-radius:18px;background:#ffffff;border:1px solid rgba(31,94,220,0.14);box-shadow:0 10px 20px rgba(22,56,116,0.08);padding:12px 14px;min-height:96px;display:grid;grid-template-rows:auto 1fr;">
-                <div style="color:#5a6f94;font:800 11px/1 'Manrope',sans-serif;letter-spacing:0.12em;text-transform:uppercase;">Total em 2025</div>
-                <div style="margin-top:6px;min-height:44px;display:flex;align-items:flex-end;color:#14366f;font:800 42px/0.9 'Manrope',sans-serif;font-variant-numeric:tabular-nums;">${total2025}</div>
-              </div>
-              <div style="width:100%;border-radius:18px;background:#ffffff;border:1px solid rgba(47,159,102,0.20);box-shadow:0 10px 20px rgba(22,56,116,0.08);padding:12px 14px;min-height:96px;display:grid;grid-template-rows:auto 1fr;">
-                <div style="color:#4f6c5d;font:800 11px/1 'Manrope',sans-serif;letter-spacing:0.12em;text-transform:uppercase;">Previsão 2026</div>
-                <div style="margin-top:6px;min-height:44px;display:flex;align-items:flex-end;color:#1f7f50;font:800 42px/0.9 'Manrope',sans-serif;font-variant-numeric:tabular-nums;">${total2026}</div>
-              </div>
-            </div>
-
-            <div style="display:grid;grid-template-columns:minmax(0,1.42fr) minmax(340px,0.78fr);gap:14px;min-height:0;">
-              <div style="border-radius:22px;background:#ffffff;border:1px solid rgba(31,94,220,0.14);box-shadow:0 12px 24px rgba(22,56,116,0.08);padding:16px 16px 14px;display:grid;grid-template-rows:auto minmax(0,1fr);gap:12px;min-height:0;">
-                <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
-                  <div>
-                    <div style="color:#12356f;font:800 22px/1.05 'Manrope',sans-serif;">Produtos em 2026</div>
-                    <div style="margin-top:4px;color:#5c7197;font:600 13px/1.2 'Manrope',sans-serif;">Comparativo por categoria com destaque para maior volume.</div>
-                  </div>
-                  <div style="padding:6px 10px;border-radius:999px;background:rgba(47,159,102,0.12);color:#1f7f50;font:800 11px/1 'Manrope',sans-serif;letter-spacing:0.08em;text-transform:uppercase;">Maior volume: Gestão Documental</div>
-                </div>
-                <div style="display:flex;flex-direction:column;gap:10px;justify-content:center;min-height:0;">${mainBars}</div>
-              </div>
-
-              <div style="border-radius:22px;background:#f7faff;border:1px solid rgba(31,94,220,0.14);box-shadow:0 12px 24px rgba(22,56,116,0.06);padding:16px 14px 12px;display:grid;grid-template-rows:auto auto minmax(0,1fr);gap:10px;">
-                <div style="color:#12356f;font:800 20px/1.05 'Manrope',sans-serif;">Evolução anual</div>
-                <div style="color:#5c7197;font:600 12px/1.2 'Manrope',sans-serif;">Soma dos produtos por ano (2023 a 2026)</div>
-                <div style="position:relative;display:flex;align-items:flex-end;justify-content:space-around;gap:10px;min-height:0;overflow:hidden;">
-                  ${miniBars}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>`;
-    }
-  },
-  {
     id: 'saberes-digitais-docentes',
     theme: 'dark',
     fullscreen: true,
@@ -796,7 +669,7 @@ const slides = [
     }
   },
 
-  /* ── Slide Onde Estamos (grid premium) ── */
+  /* ── Slide Mapa ETECs ── */
   {
     id: 'mapa-etecs',
     theme: 'dark',
@@ -809,53 +682,108 @@ const slides = [
     subtitle: '',
     accent: 'linear-gradient(90deg, #84b42e, #d2ef69)',
     render() {
+      /*
+       * Contorno do Mato Grosso — coordenadas geográficas reais mapeadas para viewBox 900×575.
+       * lon [-61.5, -50.0] xScale=78.26 | lat [-6.5, -17.5] yScale=52.27
+       * x = (lon + 61.5) * 78.26   y = (-6.5 - lat) * 52.27
+       */
+      /*
+       * Path traçado do mapa de referência real (imagem com municípios MT).
+       * viewBox 900×575. Bbox ref: left=190,top=100,w=860,h=700
+       * xScale=1.047  yScale=0.821
+       * Inclui feição NW (Aripuanã), spike norte, lóbulo leste e península Cáceres.
+       */
+      const MT = 'M108,12 L150,26 L200,13 L244,0 L286,5 L348,9 L420,22 L453,30 L515,25 L588,38 L660,55 L745,83 L828,150 L892,206 L900,290 L892,364 L840,398 L808,413 L760,440 L723,453 L680,468 L638,478 L596,482 L555,490 L516,492 L474,492 L430,488 L390,492 L358,505 L325,510 L286,511 L244,502 L224,519 L202,544 L186,568 L170,575 L150,568 L117,544 L86,511 L64,486 L43,461 L22,430 L6,396 L0,363 L5,315 L11,265 L32,232 L54,198 L75,167 L86,134 L65,100 L28,59 L44,33 L75,16 L108,12 Z';
+
+      /*
+       * Posições lidas da imagem de referência (pins vermelhos).
+       * [nome, x, y, delay, labelDx, labelDy, anchor]
+       */
       const cities = [
-        'Alta Floresta', 'Barra do Garças', 'Cáceres', 'Campo Verde',
-        'Cuiabá', 'Diamantino', 'Juara', 'Lucas do Rio Verde',
-        'Matupá', 'Poxoréu', 'Primavera do Leste', 'Rondonópolis',
-        'Sinop', 'Sorriso', 'Tangará da Serra', 'Várzea Grande',
+        ['Alta Floresta',      389, 111, 0.7,   0,  22, 'middle'],
+        ['Barra do Garças',    713, 431, 2.4,   0,  22, 'middle'],
+        ['Cáceres',            268, 510, 1.8,   0,  22, 'middle'],
+        ['Campo Verde',        534, 439, 2.9,  28,   3, 'start' ],
+        ['Cuiabá',             440, 443, 0.4,   0, -21, 'middle'],
+        ['Diamantino',         393, 345, 1.1,   0, -21, 'middle'],
+        ['Juara',              315, 168, 2.1,   0,  22, 'middle'],
+        ['Lucas do Rio Verde', 419, 283, 0.9,   0,  22, 'middle'],
+        ['Matupá',             482, 111, 1.6,   0,  22, 'middle'],
+        ['Poxoréu',            556, 455, 3.1, -28,   3, 'end'   ],
+        ['Primavera do Leste', 572, 429, 2.6,  28,   3, 'start' ],
+        ['Rondonópolis',       536, 468, 2.0,   0,  22, 'middle'],
+        ['Sinop',              471, 213, 0.6,   0, -21, 'middle'],
+        ['Sorriso',            448, 247, 1.4,   0,  22, 'middle'],
+        ['Tangará da Serra',   315, 374, 1.9, -28,   3, 'end'   ],
+        ['Várzea Grande',      452, 455, 0.5,  28,   3, 'start' ],
       ];
 
-      const pinSVG = `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="currentColor"/><circle cx="12" cy="9" r="2.5" fill="white" opacity="0.9"/></svg>`;
-
-      const cards = cities.map((city, i) => `
-        <div class="onde-card" style="animation-delay:${(0.38 + i * 0.07).toFixed(2)}s">
-          <span class="onde-pin">${pinSVG}</span>
-          <span class="onde-city">${city}</span>
-        </div>`).join('');
+      const pins = cities.map(([name, x, y, d, ldx, ldy, anchor]) => `
+        <g class="ms-pin" transform="translate(${x},${y})" style="animation-delay:${d}s">
+          <circle r="17" fill="rgba(32,90,230,0.18)" stroke="rgba(110,175,255,0.30)" stroke-width="1.5"/>
+          <circle r="12" fill="#0e205e" stroke="rgba(130,190,255,0.85)" stroke-width="1.8"/>
+          <image href="assets/etec.png" x="-9" y="-9" width="18" height="18"
+                 preserveAspectRatio="xMidYMid meet" clip-path="url(#ms-pin-clip)"/>
+          <text x="${ldx}" y="${ldy}" text-anchor="${anchor}" class="ms-lbl">${name}</text>
+        </g>`).join('');
 
       return `
-      <div class="onde-wrap">
+      <div class="ms-wrap">
 
-        <div class="onde-left">
-          <div class="onde-eyebrow">ETECs • Mato Grosso</div>
-          <h2 class="onde-title">Onde<br>Estamos</h2>
-
-          <div class="onde-counter-block">
-            <span class="onde-big-num count-up" data-target="16">0</span>
-            <div class="onde-counter-label">
-              <span class="onde-counter-main">municípios</span>
-              <span class="onde-counter-sub">estratégicos</span>
-            </div>
-          </div>
-
-          <div class="onde-sep"></div>
-
-          <p class="onde-desc">Nossa rede leva educação profissional <strong>gratuita e presencial</strong> a todas as regiões de Mato Grosso.</p>
-
-          <div class="onde-pills">
-            <span class="onde-pill">100% gratuito</span>
-            <span class="onde-pill">Presencial</span>
+        <div class="ms-header" data-anim="fade-down" data-delay="0.06">
+          <div class="ms-badge">ETECs • Mato Grosso</div>
+          <h2 class="ms-title">Onde Estamos</h2>
+          <p class="ms-desc">Nossa rede chega a 16 municípios estratégicos de Mato Grosso com educação profissional gratuita e presencial.</p>
+          <div class="ms-kpi">
+            <strong class="count-up" data-target="16">0</strong>
+            <span>municípios</span>
           </div>
         </div>
 
-        <div class="onde-right">
-          <div class="onde-grid-header">
-            <span class="onde-grid-label">Municípios atendidos</span>
-            <span class="onde-grid-count">16 localidades</span>
-          </div>
-          <div class="onde-grid">
-            ${cards}
+        <div class="ms-map-area" data-anim="fade-up" data-delay="0.14">
+          <svg class="ms-svg" viewBox="0 0 900 575"
+               xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <clipPath id="ms-pin-clip" clipPathUnits="objectBoundingBox">
+                <circle cx="0.5" cy="0.5" r="0.5"/>
+              </clipPath>
+              <linearGradient id="ms-fill" x1="20%" y1="0%" x2="80%" y2="100%">
+                <stop offset="0%"   stop-color="#2a6ae8"/>
+                <stop offset="55%"  stop-color="#1848cc"/>
+                <stop offset="100%" stop-color="#0c2680"/>
+              </linearGradient>
+              <radialGradient id="ms-shine" cx="38%" cy="35%" r="52%">
+                <stop offset="0%"   stop-color="#60a0ff" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#1030a0" stop-opacity="0.00"/>
+              </radialGradient>
+              <filter id="ms-border-glow" x="-4%" y="-4%" width="108%" height="108%">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+              <filter id="ms-pin-shadow" x="-100%" y="-100%" width="300%" height="300%">
+                <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.65"/>
+              </filter>
+            </defs>
+
+            <!-- Estado: preenchimento sólido visível -->
+            <path d="${MT}" fill="url(#ms-fill)"/>
+            <!-- Brilho interno (radial) -->
+            <path d="${MT}" fill="url(#ms-shine)"/>
+            <!-- Contorno luminoso -->
+            <path d="${MT}" fill="none"
+                  stroke="rgba(148,210,255,0.92)" stroke-width="2.2" stroke-linejoin="round"
+                  filter="url(#ms-border-glow)"/>
+
+            <!-- Marcadores com sombra agrupada -->
+            <g filter="url(#ms-pin-shadow)">
+              ${pins}
+            </g>
+          </svg>
+
+          <div class="ms-zoom-controls">
+            <button class="ms-zoom-btn" onclick="msZoomMap(this,1)" title="Ampliar">+</button>
+            <button class="ms-zoom-btn" onclick="msZoomMap(this,-1)" title="Diminuir">−</button>
+            <button class="ms-zoom-btn ms-zoom-reset" onclick="msZoomMap(this,0)" title="Redefinir">↺</button>
           </div>
         </div>
 
@@ -863,6 +791,17 @@ const slides = [
     }
   }
 ];
+
+window.msZoomMap = function(btn, dir) {
+  const svg = btn.closest('.ms-map-area').querySelector('.ms-svg');
+  let z = parseFloat(svg.dataset.zoom || '1');
+  if (dir === 1)  z = Math.min(z * 1.2, 4.0);
+  else if (dir === -1) z = Math.max(z / 1.2, 0.4);
+  else z = 1;
+  svg.dataset.zoom = z;
+  svg.style.transformOrigin = 'center center';
+  svg.style.transform = z === 1 ? '' : `scale(${z})`;
+};
 
 
 

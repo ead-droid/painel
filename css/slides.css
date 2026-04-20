@@ -1,6 +1,6 @@
-/* ─────────────────────────────────────────
-   Slide 1 — Billboard institucional
-───────────────────────────────────────── */
+﻿/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   Slide 1 â€” Billboard institucional
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .bb-layout {
   position: relative;
   width: 100%;
@@ -24,7 +24,7 @@
   animation: kenBurnsSoft 16s ease-out forwards;
 }
 
-/* Overlay direcional: esquerda s�lida, direita revela a imagem */
+/* Overlay direcional: esquerda sólida, direita revela a imagem */
 .bb-overlay {
   position: absolute;
   inset: 0;
@@ -38,7 +38,7 @@
   );
 }
 
-/* Orbe de brilho din�mico */
+/* Orbe de brilho dinâmico */
 .bb-glow-orb {
   position: absolute;
   width: 860px;
@@ -101,7 +101,7 @@
   width: fit-content;
 }
 
-/* T�tulo de campanha */
+/* Título de campanha */
 .bb-title {
   margin: 0;
   font-size: 66px;
@@ -112,18 +112,18 @@
   text-shadow: 0 4px 28px rgba(0, 0, 0, 0.35);
 }
 
-/* Linha divis�ria animada */
+/* Linha divisória animada */
 .bb-divider {
   display: none;
 }
 
-/* �rea do n�mero */
+/* Área do número */
 
 .bb-divider[data-anim="clip-left"] {
   transition: clip-path 0.85s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* �rea do n�mero */
+/* Área do número */
 .bb-number-row {
   display: flex;
   align-items: flex-end;
@@ -131,7 +131,7 @@
   margin-top: 4px;
 }
 
-/* O n�mero principal — elemento dominante */
+/* O número principal â€” elemento dominante */
 .bb-number {
   display: block;
   font-size: 210px;
@@ -145,7 +145,7 @@
   filter: drop-shadow(0 8px 40px rgba(36, 95, 255, 0.55));
 }
 
-/* Textos ao lado do n�mero */
+/* Textos ao lado do número */
 .bb-number-aside {
   display: flex;
   flex-direction: column;
@@ -170,7 +170,7 @@
   letter-spacing: 0.01em;
 }
 
-/* Rodap� / frase de fechamento */
+/* Rodapé / frase de fechamento */
 .bb-footer {
   position: relative;
   z-index: 2;
@@ -1085,9 +1085,9 @@
 
 
 
-/* ─────────────────────────────────────────
-   Slide — Arco de Servi�os Administrativos
-───────────────────────────────────────── */
+/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+   Slide â€” Arco de Serviços Administrativos
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .arco-layout {
   position: relative;
   width: 100%;
@@ -1378,9 +1378,9 @@
   line-height: 1.5;
 }
 
-/* -----------------------------------------
-   Slide 8 � Arco de Servi�os Administrativos (Light)
------------------------------------------ */
+/* ─────────────────────────────────────────
+   Slide 8 — Arco de Serviços Administrativos (Light)
+───────────────────────────────────────── */
 .arco-l-layout {
   position: relative;
   width: 100%;
@@ -1404,7 +1404,7 @@
   min-height: 0;
 }
 
-/* -- R1 C1: texto principal -- */
+/* ── R1 C1: texto principal ── */
 .arco-l-text-section {
   grid-column: 1;
   grid-row: 1;
@@ -1424,7 +1424,7 @@
   padding: 18px 4px 0;
 }
 
-/* -- Cabe�alho real da coluna direita -- */
+/* ── Cabeçalho real da coluna direita ── */
 .arco-l-courses-hdr {
   display: flex;
   justify-content: space-between;
@@ -1484,12 +1484,12 @@
   line-height: 1.3;
 }
 
-/* Estado inicial do typewriter � oculto at� JS disparar */
+/* Estado inicial do typewriter — oculto até JS disparar */
 [data-anim="typewriter"] {
   opacity: 0;
 }
 
-/* Subcard azul � oferta atual (billboard integrado) � R2 C1 */
+/* Subcard azul — oferta atual (billboard integrado) — R2 C1 */
 .arco-l-current {
   grid-column: 1;
   grid-row: 2;
@@ -1519,7 +1519,7 @@
   pointer-events: none;
 }
 
-/* Overlay direcional: esquerda s�lida, direita revela a foto */
+/* Overlay direcional: esquerda sólida, direita revela a foto */
 .arco-l-current-overlay {
   position: absolute;
   inset: 0;
@@ -1601,7 +1601,7 @@
   letter-spacing: 0.01em;
 }
 
-/* -- Coluna direita -- */
+/* ── Coluna direita ── */
 .arco-l-side {
   display: flex;
   flex-direction: column;
@@ -1609,7 +1609,7 @@
   min-height: 0;
 }
 
-/* Card de cursos conclu�dos */
+/* Card de cursos concluídos */
 .arco-l-courses {
   background: #ffffff;
   border-radius: 22px;
@@ -1724,7 +1724,7 @@
   color: #8a9ab8;
 }
 
-/* Rodap� de fechamento � largura total, centralizado */
+/* Rodapé de fechamento — largura total, centralizado */
 .arco-l-closing {
   background: transparent;
   padding: 0 8px 4px;
@@ -2377,7 +2377,7 @@
 
 
 
-/* -- Regula��o slide: dark navy theme -- */
+/* ── Regulação slide: dark navy theme ── */
 .regsup-layout {
   background: linear-gradient(125deg, rgba(4, 8, 22, 0.98) 0%, rgba(6, 11, 32, 0.96) 60%, rgba(8, 16, 44, 0.94) 100%) !important;
 }
@@ -2468,7 +2468,7 @@
   border-color: rgba(80, 150, 255, 0.32);
 }
 
-/* -- Course cards dark -- */
+/* ── Course cards dark ── */
 .regsup-card {
   gap: 10px;
   background: linear-gradient(135deg, rgba(10, 20, 60, 0.82), rgba(8, 14, 44, 0.76)) !important;
@@ -2547,9 +2547,9 @@
   color: #ffffff;
   -webkit-text-f
 
-/* ------------------------------------------
-   rg2 � Regula��o/Supervis�o ES � editorial
-   ------------------------------------------ */
+/* ══════════════════════════════════════════
+   rg2 — Regulação/Supervisão ES — editorial
+   ══════════════════════════════════════════ */
 
 .rg2-bg-image {
   position: absolute;
@@ -2612,7 +2612,7 @@
   z-index: 0;
 }
 
-/* -- Main editorial content -- */
+/* ── Main editorial content ── */
 .rg2-main {
   position: relative;
   z-index: 1;
@@ -2676,7 +2676,7 @@
   letter-spacing: 0.01em;
 }
 
-/* -- Bottom cards row -- */
+/* ── Bottom cards row ── */
 .rg2-bottom {
   position: relative;
   z-index: 1;
@@ -2823,9 +2823,9 @@
 .rg2-yrow--hi small { color: rgba(160, 210, 255, 0.80); }
 .rg2-yrow--hi strong { color: #ffffff; }
 
-/* ------------------------------------------
-   rg2 � Vis�o Geral dos Produtos 2023-2026
-   ------------------------------------------ */
+/* ══════════════════════════════════════════
+   rg2 — Visão Geral dos Produtos 2023-2026
+   ══════════════════════════════════════════ */
 
 .rg2-bg-image {
   position: absolute;
@@ -3310,7 +3310,7 @@
 .slide-surface[data-id="regulacao-supervisao-es"] .rg2-layout {
   background:
     linear-gradient(180deg, rgba(245, 247, 244, 0.58) 0%, rgba(238, 242, 238, 0.72) 100%),
-    url("../assets/SUP.png") center bottom / cover no-repeat,
+    url("assets/SUP.png") center bottom / cover no-repeat,
     radial-gradient(circle at top right, rgba(116, 195, 101, 0.10), transparent 28%),
     linear-gradient(180deg, #f5f7f4 0%, #eef2ee 100%);
 }
@@ -3322,9 +3322,9 @@
   z-index: 2;
 }
 
-/* ------------------------------------------
-   es-overview � Educa��o Superior 2023-2026
-   ------------------------------------------ */
+/* ══════════════════════════════════════════
+   es-overview — Educação Superior 2023-2026
+   ══════════════════════════════════════════ */
 
 .es-overview {
   position: relative;
@@ -3344,7 +3344,7 @@
 }
 
 .es-backdrop {
-  background: url("../assets/SUP.png") center bottom / cover no-repeat;
+  background: url("assets/SUP.png") center bottom / cover no-repeat;
   transform: scale(1.02);
 }
 
@@ -3685,9 +3685,9 @@
   color: #163058;
 }
 
-/* ------------------------------------------
-   es-overview � variant inspired by arco layout
-   ------------------------------------------ */
+/* ══════════════════════════════════════════
+   es-overview — variant inspired by arco layout
+   ══════════════════════════════════════════ */
 
 .es-overview {
   position: relative;
@@ -3708,7 +3708,7 @@
 }
 
 .es-backdrop {
-  background: url("../assets/SUP.png") center bottom / cover no-repeat;
+  background: url("assets/SUP.png") center bottom / cover no-repeat;
   opacity: 0.18;
 }
 
@@ -3808,7 +3808,7 @@
 }
 
 .es-hero-media {
-  background: url("../assets/SUP.png") right center / cover no-repeat;
+  background: url("assets/SUP.png") right center / cover no-repeat;
   opacity: 0.76;
 }
 
@@ -4171,9 +4171,9 @@
   line-height: 1.28;
 }
 
-/* ------------------------------------------
-   Educa��o Superior � same family as arco slide
-   ------------------------------------------ */
+/* ══════════════════════════════════════════
+   Educação Superior — same family as arco slide
+   ══════════════════════════════════════════ */
 
 .slide-surface[data-id="regulacao-supervisao-es"] .edu-sup-layout {
   background: #eef2f6;
@@ -4243,7 +4243,7 @@
   color: #91a0ba;
 }
 
-/* Educa��o Superior � blue palette */
+/* Educação Superior — blue palette */
 .slide-surface[data-id="regulacao-supervisao-es"] .edu-sup-layout {
   background: linear-gradient(180deg, #edf3fb 0%, #e8f0fa 100%);
 }
@@ -4289,7 +4289,7 @@
   color: #1a2e50;
 }
 
-/* Educa��o Superior � requested blue-only refinement */
+/* Educação Superior — requested blue-only refinement */
 .slide-surface[data-id="regulacao-supervisao-es"] .arco-l-current-chip {
   background: rgba(37, 99, 235, 0.18);
   border-color: rgba(59, 130, 246, 0.34);
@@ -4323,7 +4323,7 @@
   color: #5f78a7;
 }
 
-/* Educa��o Superior � forced exact blue palette */
+/* Educação Superior — forced exact blue palette */
 .slide-surface[data-id="regulacao-supervisao-es"] .arco-l-badge,
 .slide-surface[data-id="regulacao-supervisao-es"] .arco-l-current-chip {
   color: #2563eb;
@@ -4368,7 +4368,7 @@
   background-clip: text;
 }
 
-/* Educa��o Superior � hard lock requested by user */
+/* Educação Superior — hard lock requested by user */
 .slide-surface[data-id="regulacao-supervisao-es"] .arco-l-current-chip {
   background: rgba(37, 99, 235, 0.12) !important;
   border-color: rgba(59, 130, 246, 0.30) !important;
@@ -4415,7 +4415,7 @@
   background-clip: text !important;
 }
 
-/* Educa��o Superior � final hard lock without green */
+/* Educação Superior — final hard lock without green */
 .slide-surface[data-id="regulacao-supervisao-es"] .arco-l-text-section .arco-l-title {
   background: linear-gradient(100deg, #1e3a8a 0%, #2563eb 58%, #3b82f6 100%) !important;
   -webkit-background-clip: text !important;
@@ -4457,7 +4457,7 @@
   color: #2563eb !important;
 }
 
-/* Educa��o Superior � exact requested patch */
+/* Educação Superior — exact requested patch */
 .slide-surface[data-id="regulacao-supervisao-es"] .edu-sup-courses-grid {
   display: grid;
 }
@@ -4528,9 +4528,9 @@
   background-clip: text !important;
 }
 
-/* -----------------------------------------
-   Slide Mapa ETECs � Onde Estamos
------------------------------------------ */
+/* ─────────────────────────────────────────
+   Slide Mapa ETECs — Onde Estamos
+───────────────────────────────────────── */
 .mapslide-wrap {
   width: 100%;
   height: 100%;
@@ -4552,7 +4552,7 @@
   pointer-events: none;
 }
 
-/* -- Painel esquerdo: t�tulo e contador -- */
+/* ── Painel esquerdo: título e contador ── */
 .mapslide-info {
   width: 30%;
   flex-shrink: 0;
@@ -4624,7 +4624,7 @@
   color: rgba(180,210,255,0.7);
 }
 
-/* -- �rea do mapa -- */
+/* ── Área do mapa ── */
 .mapslide-maparea {
   flex: 1;
   display: flex;
@@ -4650,7 +4650,7 @@
   overflow: visible;
 }
 
-/* Mato Grosso � preenchimento e borda */
+/* Mato Grosso — preenchimento e borda */
 .mt-body {
   fill: rgba(28, 72, 190, 0.55);
 }
@@ -4662,7 +4662,7 @@
   filter: drop-shadow(0 0 12px rgba(80, 150, 255, 0.60));
 }
 
-/* -- Anima��o de entrada dos pins -- */
+/* ── Animação de entrada dos pins ── */
 @keyframes mpin-pop {
   0% {
     transform: translate(var(--mpin-drift-x, 0), var(--mpin-drift-y, 14px)) scale(var(--mpin-start, 0.14));
@@ -4715,7 +4715,7 @@
   dominant-baseline: hanging;
 }
 
-/* -- Layout vertical do slide mapa (texto topo + mapa embaixo) -- */
+/* ── Layout vertical do slide mapa (texto topo + mapa embaixo) ── */
 .mapslide-v {
   flex-direction: column;
 }
@@ -4791,254 +4791,174 @@
 }
 
 
-/* -----------------------------------------------
-   Slide Mapa ETECs � classes ms-* (redesign limpo)
------------------------------------------------ */
-/* ── Onde Estamos — grid premium ── */
-.onde-wrap {
+/* ═══════════════════════════════════════════════
+   Slide Mapa ETECs — classes ms-* (redesign limpo)
+═══════════════════════════════════════════════ */
+.ms-wrap {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: row;
-  background: linear-gradient(145deg, #050f1e 0%, #091526 55%, #060e1c 100%);
+  background: linear-gradient(145deg, #050f1e 0%, #091526 60%, #060d1e 100%);
   border-radius: 28px;
   overflow: hidden;
   position: relative;
 }
-.onde-wrap::before {
+.ms-wrap::before {
   content: '';
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 55% at 8% 50%, rgba(132,180,46,0.07) 0%, transparent 65%),
-    radial-gradient(ellipse 50% 50% at 90% 20%, rgba(28,80,220,0.10) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 40% at 85% 85%, rgba(132,180,46,0.06) 0%, transparent 55%);
+    radial-gradient(ellipse 55% 40% at 12% 18%, rgba(28,80,220,0.14) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 30% at 88% 82%, rgba(110,190,40,0.07) 0%, transparent 55%);
   pointer-events: none;
 }
-
-/* ── Left panel ── */
-.onde-left {
-  width: 370px;
-  flex-shrink: 0;
+.ms-header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 52px 44px 52px 60px;
+  align-items: flex-start;
+  gap: 14px 0;
+  padding: 32px 22px 24px;
+  width: 220px;
+  flex-shrink: 0;
   position: relative;
   z-index: 2;
-  box-sizing: border-box;
+  border-right: 1px solid rgba(70,130,255,0.10);
+  border-bottom: none;
 }
-.onde-left::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 12%;
-  bottom: 12%;
-  width: 1px;
-  background: linear-gradient(180deg, transparent 0%, rgba(132,180,46,0.35) 35%, rgba(132,180,46,0.35) 65%, transparent 100%);
-}
-
-.onde-eyebrow {
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #84b42e;
-  margin-bottom: 18px;
-  opacity: 0;
-  animation: fadeSlideDown 0.55s ease forwards 0.1s;
-}
-
-.onde-title {
-  margin: 0 0 30px;
-  font-size: 54px;
-  font-weight: 800;
-  line-height: 1.0;
-  letter-spacing: -0.04em;
-  background: linear-gradient(130deg, #ffffff 0%, #c8dcff 55%, #a8d44a 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  opacity: 0;
-  animation: fadeSlideDown 0.55s ease forwards 0.18s;
-}
-
-.onde-counter-block {
-  display: flex;
-  align-items: baseline;
-  gap: 14px;
-  margin-bottom: 26px;
-  opacity: 0;
-  animation: fadeSlideDown 0.55s ease forwards 0.26s;
-}
-.onde-big-num {
-  font-size: 100px;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: -0.06em;
-  background: linear-gradient(135deg, #84b42e 0%, #d2ef69 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.onde-counter-label {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-.onde-counter-main {
-  font-size: 18px;
-  font-weight: 700;
-  color: rgba(255,255,255,0.85);
-  line-height: 1.2;
-}
-.onde-counter-sub {
-  font-size: 13px;
-  font-weight: 500;
-  color: rgba(175,210,255,0.50);
-  letter-spacing: 0.04em;
-}
-
-.onde-sep {
-  width: 44px;
-  height: 2px;
-  background: linear-gradient(90deg, #84b42e 0%, transparent 100%);
-  margin-bottom: 22px;
-  border-radius: 2px;
-  opacity: 0;
-  animation: fadeSlideRight 0.55s ease forwards 0.34s;
-}
-
-.onde-desc {
-  font-size: 13.5px;
-  font-weight: 500;
-  line-height: 1.75;
-  color: rgba(175,210,255,0.58);
-  margin: 0 0 26px;
-  opacity: 0;
-  animation: fadeSlideDown 0.55s ease forwards 0.40s;
-}
-.onde-desc strong {
-  color: rgba(255,255,255,0.88);
-  font-weight: 700;
-}
-
-.onde-pills {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  opacity: 0;
-  animation: fadeSlideDown 0.55s ease forwards 0.47s;
-}
-.onde-pill {
+.ms-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: rgba(132,180,46,0.10);
+  border: 1px solid rgba(132,180,46,0.28);
+  color: #b3d85a;
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #84b42e;
-  border: 1px solid rgba(132,180,46,0.38);
-  border-radius: 999px;
-  padding: 5px 14px;
-  background: rgba(132,180,46,0.08);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
-
-/* ── Right panel ── */
-.onde-right {
-  flex: 1;
-  min-width: 0;
+.ms-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  background: linear-gradient(120deg, #fff 20%, #c6deff 55%, #a8d44a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.ms-desc {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(165,200,255,0.55);
+  line-height: 1.5;
+}
+.ms-kpi {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 48px 52px 48px 48px;
-  position: relative;
-  z-index: 2;
-  box-sizing: border-box;
-  gap: 18px;
+  align-items: flex-start;
+  gap: 2px;
+  margin-top: auto;
 }
-
-.onde-grid-header {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  opacity: 0;
-  animation: fadeSlideDown 0.55s ease forwards 0.22s;
+.ms-kpi strong {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  background: linear-gradient(120deg, #84b42e 0%, #d2ef69 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
-.onde-grid-label {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: rgba(175,210,255,0.45);
-}
-.onde-grid-count {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.10em;
-  text-transform: uppercase;
-  color: rgba(132,180,46,0.70);
-}
-
-.onde-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-
-@keyframes onde-card-in {
-  from { opacity: 0; transform: translateY(14px) scale(0.96); }
-  to   { opacity: 1; transform: translateY(0)   scale(1);    }
-}
-.onde-card {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 13px 14px;
-  background: rgba(255,255,255,0.035);
-  border: 1px solid rgba(255,255,255,0.07);
-  border-radius: 10px;
-  cursor: default;
-  opacity: 0;
-  animation: onde-card-in 0.45s cubic-bezier(0.34,1.4,0.64,1) forwards;
-  transition: background 0.25s, border-color 0.25s, transform 0.25s;
-}
-.onde-card:hover {
-  background: rgba(132,180,46,0.09);
-  border-color: rgba(132,180,46,0.28);
-  transform: translateY(-2px);
-}
-
-.onde-pin {
-  width: 28px;
-  height: 28px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  background: linear-gradient(135deg, rgba(132,180,46,0.22), rgba(210,239,105,0.12));
-  border: 1px solid rgba(132,180,46,0.35);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #84b42e;
-}
-.onde-pin svg {
-  width: 13px;
-  height: 13px;
-  display: block;
-}
-
-.onde-city {
-  font-size: 12.5px;
+.ms-kpi span {
+  font-size: 17px;
   font-weight: 600;
-  color: rgba(220,235,255,0.88);
-  line-height: 1.25;
+  color: rgba(175,210,255,0.62);
+}
+.ms-map-area {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  padding: 8px 10px;
+  box-sizing: border-box;
+}
+/* SVG ocupa todo o espaço disponível, preserveAspectRatio no elemento cuida do scaling */
+.ms-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+@keyframes ms-pin-pop {
+  0%   { opacity: 0; transform: scale(0.15) translateY(14px); }
+  60%  { opacity: 1; transform: scale(1.18) translateY(-2px); }
+  80%  { transform: scale(0.94) translateY(0); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+.ms-pin {
+  opacity: 0;
+  animation: ms-pin-pop 0.70s cubic-bezier(0.34,1.56,0.64,1) forwards;
+}
+.ms-lbl {
+  font-family: 'Manrope', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  fill: rgba(225,240,255,0.96);
+  paint-order: stroke fill;
+  stroke: rgba(4,12,38,0.92);
+  stroke-width: 3px;
+  stroke-linejoin: round;
   letter-spacing: 0.01em;
 }
 
-/* Keyframes de entrada dos elementos do painel esquerdo */
-@keyframes fadeSlideDown {
-  from { opacity: 0; transform: translateY(-12px); }
-  to   { opacity: 1; transform: translateY(0);      }
+/* Controles de zoom do mapa */
+.ms-zoom-controls {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-@keyframes fadeSlideRight {
-  from { opacity: 0; transform: translateX(-10px); }
-  to   { opacity: 1; transform: translateX(0);     }
+.ms-zoom-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  border: 1px solid rgba(100,160,255,0.28);
+  background: rgba(6,18,50,0.78);
+  color: rgba(190,220,255,0.92);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  user-select: none;
+}
+.ms-zoom-btn:hover {
+  background: rgba(30,70,200,0.60);
+  border-color: rgba(130,190,255,0.50);
+}
+.ms-zoom-btn:active {
+  transform: scale(0.91);
+}
+.ms-zoom-reset {
+  font-size: 15px;
+  border-top: 1px solid rgba(100,160,255,0.15);
+  margin-top: 2px;
 }
