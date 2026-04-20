@@ -735,6 +735,101 @@ const slides = [
     }
   },
   {
+    id: 'coordenadoria-avaliacao-institucional',
+    theme: 'light',
+    fullscreen: true,
+    duration: 19000,
+    enterAnim: 'enter-zoom',
+    exitAnim: 'exit-zoom',
+    eyebrow: '',
+    title: '',
+    subtitle: '',
+    accent: 'linear-gradient(90deg, #1f5edc, #5ab4ff)',
+    render() {
+      const products = [
+        { name: 'Pesquisa de Egressos', vals: [0, 7, 10, 17] },
+        { name: 'Pesquisa Permanência e Êxito', vals: [0, 15, 17, 17] },
+        { name: 'Pesquisa Sócio Econômica', vals: [0, 15, 17, 17] },
+        { name: 'Pesquisa de Evasão', vals: [0, 10, 16, 17] },
+        { name: 'Plano de Ação para Permanência', vals: [0, 0, 17, 17] },
+        { name: 'Formação Continuada', vals: [1, 4, 3, 4] },
+      ];
+
+      const years = ['2023', '2024', '2025', '2026'];
+      const colors = ['#F0B400', '#43C61A', '#36D6D2', '#5D84E3'];
+      const total2025 = 80;
+      const total2026 = 89;
+      const convergencia = 5;
+      const maxVal = 17;
+
+      const legend = years.map((year, idx) => `
+        <div style="display:inline-flex;align-items:center;gap:8px;">
+          <span style="width:16px;height:16px;border-radius:6px;background:${colors[idx]};display:inline-block;box-shadow:0 2px 6px rgba(24,57,116,0.16);"></span>
+          <span style="color:#2d4a7d;font:800 17px/1 'Manrope',sans-serif;letter-spacing:0.01em;">${year}</span>
+        </div>
+      `).join('');
+
+      const groups = products.map((product, index) => {
+        const bars = product.vals.map((value, idx) => {
+          const h = value === 0 ? 4 : Math.max((value / maxVal) * 134, 10);
+          const is2026 = idx === 3;
+          return `
+            <div style="display:flex;flex-direction:column;align-items:center;gap:7px;min-width:28px;">
+              <span style="color:${is2026 ? '#16479a' : '#4f6997'};font:800 18px/1 'Manrope',sans-serif;letter-spacing:0.01em;">${value}</span>
+              <span style="width:28px;height:146px;border-radius:14px;background:#edf2fb;display:flex;align-items:flex-end;padding:2px;box-sizing:border-box;">
+                <span style="width:100%;height:${h.toFixed(2)}px;border-radius:12px;background:${colors[idx]};box-shadow:${is2026 ? '0 9px 16px rgba(47,111,224,0.30)' : 'none'};"></span>
+              </span>
+            </div>`;
+        }).join('');
+
+        return `
+          <div style="display:flex;flex-direction:column;align-items:center;gap:9px;min-width:124px;" data-anim="fade-up" data-delay="${(0.16 + index * 0.05).toFixed(2)}">
+            <div style="display:flex;align-items:flex-end;gap:7px;">${bars}</div>
+            <div style="color:#173b73;font:800 19px/1.18 'Manrope',sans-serif;text-align:center;max-width:146px;min-height:48px;">${product.name}</div>
+          </div>
+        `;
+      }).join('');
+
+      return `
+      <div style="height:100%;padding:16px 22px;box-sizing:border-box;background:transparent;">
+        <div style="height:100%;border-radius:28px;background:linear-gradient(180deg,#f9fbff 0%,#f2f7ff 100%);border:1px solid rgba(30,78,165,0.12);box-shadow:0 20px 38px rgba(18,45,98,0.10);padding:18px 22px 18px;display:grid;grid-template-rows:auto auto minmax(0,1fr);gap:12px;overflow:hidden;">
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:inline-flex;align-items:center;width:fit-content;padding:7px 13px;border-radius:999px;border:1px solid rgba(31,94,220,0.20);background:rgba(31,94,220,0.08);color:#1f5edc;font:800 10px/1 'Manrope',sans-serif;letter-spacing:0.14em;text-transform:uppercase;">Coordenadoria de Avaliação Institucional</div>
+            <h2 style="margin:0;color:#0f2f63;font:800 46px/0.96 'Manrope',sans-serif;letter-spacing:-0.03em;">COORDENADORIA DE AVALIAÇÃO INSTITUCIONAL</h2>
+            <p style="margin:0;color:#4d6288;font:700 19px/1.2 'Manrope',sans-serif;">Evolução dos produtos estratégicos | 2023 a 2026</p>
+          </div>
+
+          <div style="display:grid;grid-template-rows:auto minmax(0,1fr);gap:12px;min-height:0;">
+            <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;">
+              <div style="border-radius:18px;background:#ffffff;border:1px solid rgba(31,94,220,0.14);padding:12px 14px;min-height:96px;display:grid;grid-template-rows:auto 1fr;">
+                <div style="color:#587097;font:800 14px/1 'Manrope',sans-serif;letter-spacing:0.11em;text-transform:uppercase;">Produtos monitorados</div>
+                <div style="margin-top:6px;color:#13356d;font:800 38px/0.92 'Manrope',sans-serif;display:flex;align-items:flex-end;">6</div>
+              </div>
+              <div style="border-radius:18px;background:#ffffff;border:1px solid rgba(31,94,220,0.14);padding:12px 14px;min-height:96px;display:grid;grid-template-rows:auto 1fr;">
+                <div style="color:#587097;font:800 14px/1 'Manrope',sans-serif;letter-spacing:0.11em;text-transform:uppercase;">Total em 2025</div>
+                <div style="margin-top:6px;color:#13356d;font:800 38px/0.92 'Manrope',sans-serif;display:flex;align-items:flex-end;">${total2025}</div>
+              </div>
+              <div style="border-radius:18px;background:#ffffff;border:1px solid rgba(31,94,220,0.14);padding:12px 14px;min-height:96px;display:grid;grid-template-rows:auto 1fr;">
+                <div style="color:#587097;font:800 14px/1 'Manrope',sans-serif;letter-spacing:0.11em;text-transform:uppercase;">Previsão 2026</div>
+                <div style="margin-top:6px;color:#13356d;font:800 38px/0.92 'Manrope',sans-serif;display:flex;align-items:flex-end;">${total2026}</div>
+              </div>
+            </div>
+
+            <div style="border-radius:22px;background:#ffffff;border:1px solid rgba(31,94,220,0.14);box-shadow:0 12px 24px rgba(22,56,116,0.08);padding:14px 14px 12px;display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:10px;min-height:0;overflow:visible;">
+              <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;">
+                <div style="display:flex;flex-direction:column;gap:8px;">
+                  <div style="color:#12356f;font:800 23px/1.02 'Manrope',sans-serif;">Evolução por produto (2023–2026)</div>
+                </div>
+              </div>
+              <div style="min-height:0;overflow:visible;display:flex;align-items:flex-start;justify-content:space-between;gap:10px;padding:4px 4px 0;">${groups}</div>
+              <div style="display:flex;align-items:center;justify-content:center;gap:18px;padding:16px 4px 2px;">${legend}</div>
+            </div>
+          </div>
+        </div>
+      </div>`;
+    }
+  },
+  {
     id: 'saberes-digitais-docentes',
     theme: 'dark',
     fullscreen: true,
