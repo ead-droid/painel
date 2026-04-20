@@ -128,6 +128,7 @@ img { max-width: 100%; display: block; }
 }
 
 .brand-cluster {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -667,5 +668,19 @@ img { max-width: 100%; display: block; }
 .page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .dot.active {
   background: linear-gradient(90deg, #032c4f, #0f427e);
   box-shadow: 0 0 18px rgba(15, 66, 126, 0.34);
+}
+
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .brand-cluster::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 88px;
+  height: 74px;
+  background: url("../assets/logo.png") left center / 330px auto no-repeat;
+  filter: brightness(0) invert(1);
+  pointer-events: none;
+  z-index: 2;
 }
 
