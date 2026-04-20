@@ -438,9 +438,9 @@ const slides = [
 
           <!-- R1 C1: texto principal -->
           <div class="arco-l-text-section" data-anim="fade-up" data-delay="0.06">
-            <div class="arco-l-badge" data-anim="fade-down" data-delay="0.08">Coordenação de Educação a Distância</div>
-            <h2 class="arco-l-title" data-anim="typewriter" data-delay="0.14">Trilha de qualificação profissional em EAD</h2>
-            <p class="arco-l-subtitle" data-anim="fade-up" data-delay="0.60">Arco de Serviços Administrativos</p>
+            <div class="arco-l-badge" data-anim="fade-down" data-delay="0.08" style="background: rgba(37, 99, 235, 0.08); border-color: rgba(59, 130, 246, 0.24); color: #2563eb;">Coordenação de Educação a Distância</div>
+            <h2 class="arco-l-title" data-anim="typewriter" data-delay="0.14" style="background: linear-gradient(100deg, #1e3a8a 0%, #2563eb 55%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Trilha de qualificação profissional em EAD</h2>
+            <p class="arco-l-subtitle" data-anim="fade-up" data-delay="0.60" style="color: #2563eb;">Arco de Serviços Administrativos</p>
           </div>
 
           <!-- R2 C1: card azul -->
@@ -466,7 +466,7 @@ const slides = [
             <!-- R2 C2: grid de cursos -->
             <div class="arco-l-courses-grid">
               <div class="arco-l-course-card" data-anim="fade-up" data-delay="0.18">
-                <div class="arco-l-course-icon">
+                <div class="arco-l-course-icon" style="background: rgba(37, 99, 235, 0.08); border-color: rgba(59, 130, 246, 0.18); color: #2563eb;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg>
                 </div>
                 <span class="arco-l-course-name">Habilidades Profissionais para a Vida Profissional</span>
@@ -474,7 +474,7 @@ const slides = [
                 <span class="arco-l-course-label">concluintes</span>
               </div>
               <div class="arco-l-course-card" data-anim="fade-up" data-delay="0.22">
-                <div class="arco-l-course-icon">
+                <div class="arco-l-course-icon" style="background: rgba(37, 99, 235, 0.08); border-color: rgba(59, 130, 246, 0.18); color: #2563eb;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
                 </div>
                 <span class="arco-l-course-name">Auxiliar de Escritório</span>
@@ -482,7 +482,7 @@ const slides = [
                 <span class="arco-l-course-label">concluintes</span>
               </div>
               <div class="arco-l-course-card" data-anim="fade-up" data-delay="0.26">
-                <div class="arco-l-course-icon">
+                <div class="arco-l-course-icon" style="background: rgba(37, 99, 235, 0.08); border-color: rgba(59, 130, 246, 0.18); color: #2563eb;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 0-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
                 </div>
                 <span class="arco-l-course-name">Assistente Administrativo</span>
@@ -490,7 +490,7 @@ const slides = [
                 <span class="arco-l-course-label">concluintes</span>
               </div>
               <div class="arco-l-course-card" data-anim="fade-up" data-delay="0.30">
-                <div class="arco-l-course-icon">
+                <div class="arco-l-course-icon" style="background: rgba(37, 99, 235, 0.08); border-color: rgba(59, 130, 246, 0.18); color: #2563eb;">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
                 </div>
                 <span class="arco-l-course-name">Informática Básica</span>
@@ -509,100 +509,100 @@ const slides = [
     }
   },
   {
-    id: 'regulacao-supervisao-es',
-    theme: 'dark',
+    id: 'produtos-educacao-superior-2023-2026',
+    theme: 'light',
     fullscreen: true,
-    duration: 17000,
+    duration: 18000,
     enterAnim: 'enter-zoom',
     exitAnim: 'exit-zoom',
     eyebrow: '',
     title: '',
     subtitle: '',
-    accent: 'linear-gradient(90deg, #1c50dc, #2d7bff)',
+    accent: 'linear-gradient(90deg, #032c4f, #ffffff)',
     render() {
-      const products = [
-        { name: 'Avalia&ccedil;&atilde;o de Cursos Superiores', y2023: 10, y2024: 17, y2025: 24, y2026: 29 },
-        { name: 'Credenciamento de Institui&ccedil;&otilde;es', y2023: 0, y2024: 0, y2025: 1, y2026: 1 },
-        { name: 'Forma&ccedil;&atilde;o Continuada', y2023: 3, y2024: 4, y2025: 3, y2026: 6 },
-        { name: 'Publica&ccedil;&atilde;o Revista C&amp;T', y2023: 1, y2024: 1, y2025: 1, y2026: 0 },
-      ];
-      const totals = {
-        y2023: products.reduce((s, p) => s + p.y2023, 0),
-        y2024: products.reduce((s, p) => s + p.y2024, 0),
-        y2025: products.reduce((s, p) => s + p.y2025, 0),
-        y2026: products.reduce((s, p) => s + p.y2026, 0),
-      };
-
-      const rows = products.map((item, i) => `
-        <div class='rg2-row' data-anim='fade-up' data-delay='${(0.22 + i * 0.07).toFixed(2)}'>
-          <div class='rg2-cell rg2-cell-name'>${item.name}</div>
-          <div class='rg2-cell rg2-cell-val'>${item.y2023}</div>
-          <div class='rg2-cell rg2-cell-val'>${item.y2024}</div>
-          <div class='rg2-cell rg2-cell-val'>${item.y2025}</div>
-          <div class='rg2-cell rg2-cell-val rg2-cell-accent'>${item.y2026}</div>
-        </div>`).join('');
-
-      const productTags = products.map(p =>
-        `<span class='rg2-ptag'>${p.name}</span>`).join('');
-
       return `
-      <div class='rg2-layout'>
-        <div class='rg2-bg-grid'></div>
-        <div class='rg2-bg-glow'></div>
-        <div class='rg2-fade-bottom'></div>
-
-        <div class='rg2-main' data-anim='fade-up' data-delay='0.06'>
-          <span class='rg2-eyebrow' data-anim='fade-down' data-delay='0.08'>Coordenadoria de Regula&ccedil;&atilde;o e Supervis&atilde;o da Educa&ccedil;&atilde;o Superior</span>
-          <h2 class='rg2-headline' data-anim='fade-up' data-delay='0.14'>
-            Regulando e fortalecendo<br>a educa&ccedil;&atilde;o superior<br><span class='rg2-headline-hi'>em Mato Grosso</span>
-          </h2>
-          <p class='rg2-lead' data-anim='fade-up' data-delay='0.22'>Produtos de avalia&ccedil;&atilde;o, credenciamento, forma&ccedil;&atilde;o e publica&ccedil;&atilde;o cient&iacute;fica acompanhados com crescimento expressivo de 2023 a 2026.</p>
-          <div class='rg2-ptags' data-anim='fade-up' data-delay='0.28'>${productTags}</div>
-        </div>
-
-        <div class='rg2-bottom' data-anim='fade-up' data-delay='0.32'>
-          <div class='rg2-card-wide'>
-            <strong class='rg2-card-title'>Leitura institucional</strong>
-            <p class='rg2-card-text'>A Coordenadoria registra evolu&ccedil;&atilde;o cont&iacute;nua em seus produtos entre 2023 e 2026, com destaque para a Avalia&ccedil;&atilde;o de Cursos Superiores — que saltou de 10 para 29 a&ccedil;&otilde;es — e Forma&ccedil;&atilde;o Continuada, que passou de 3 para 6 produtos previstos.</p>
-          </div>
-
-          <div class='rg2-card-stat'>
-            <strong class='rg2-stat-num count-up' data-target='${totals.y2026}'>0</strong>
-            <span class='rg2-stat-label'>entregas previstas<br>em 2026</span>
-          </div>
-
-          <div class='rg2-card-stat rg2-card-stat--green'>
-            <div class='rg2-stat-row'>
-              <svg class='rg2-spark' viewBox='0 0 72 56' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                <defs>
-                  <linearGradient id='sg1' x1='0' y1='0' x2='0' y2='1'>
-                    <stop offset='0%' stop-color='#60e0a0'/><stop offset='100%' stop-color='rgba(40,180,110,0.15)'/>
-                  </linearGradient>
-                  <linearGradient id='sg2' x1='0' y1='0' x2='0' y2='1'>
-                    <stop offset='0%' stop-color='#a0ffcc'/><stop offset='100%' stop-color='rgba(60,220,140,0.20)'/>
-                  </linearGradient>
-                </defs>
-                <rect x='0'  y='34' width='14' height='22' rx='3' fill='url(#sg1)' opacity='0.5'/>
-                <rect x='19' y='22' width='14' height='34' rx='3' fill='url(#sg1)' opacity='0.68'/>
-                <rect x='38' y='10' width='14' height='46' rx='3' fill='url(#sg1)' opacity='0.84'/>
-                <rect x='57' y='0'  width='14' height='56' rx='3' fill='url(#sg2)'/>
-                <polyline points='7,34 26,22 45,10 64,1' stroke='#60e0a0' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' opacity='0.60'/>
-                <circle cx='64' cy='1' r='4' fill='#a0ffcc'/>
-              </svg>
-              <strong class='rg2-stat-num rg2-stat-num--green'>+157%</strong>
+      <div style="height:100%;padding:16px 22px;box-sizing:border-box;background:transparent;overflow:hidden;position:relative;">
+        <div style="position:absolute;inset:0;background:radial-gradient(circle at 20% 18%, rgba(15,66,126,0.22) 0%, rgba(15,66,126,0) 28%), radial-gradient(circle at 82% 24%, rgba(15,66,126,0.12) 0%, rgba(15,66,126,0) 24%), linear-gradient(135deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0) 42%);"></div>
+        <div style="position:relative;z-index:1;height:100%;border-radius:26px;background:linear-gradient(180deg, #081635 0%, #02203c 52%, #032c4f 100%);box-shadow:0 14px 28px rgba(0,0,0,0.20);padding:22px 26px 16px;display:grid;grid-template-rows:auto minmax(0,1fr) auto;row-gap:16px;box-sizing:border-box;overflow:hidden;border:1px solid rgba(255,255,255,0.05);">
+          <div style="display:grid;grid-template-columns:minmax(0, 1fr) 200px;align-items:start;column-gap:22px;">
+            <div style="display:flex;flex-direction:column;align-items:flex-start;gap:9px;max-width:840px;min-width:0;">
+              <div style="display:inline-flex;align-items:center;padding:9px 16px;border-radius:999px;border:1px solid rgba(15,66,126,0.55);background:rgba(15,66,126,0.18);color:#ffffff;font:700 11px/1 'Inter', 'Segoe UI', sans-serif;letter-spacing:1.35px;text-transform:uppercase;">Coordenadoria de Regulação e Supervisão da Educação Superior</div>
+              <div style="display:flex;flex-direction:column;gap:5px;">
+                <h2 style="margin:0;color:#ffffff;font:800 46px/0.92 'Poppins', 'Inter', sans-serif;letter-spacing:-1.8px;max-width:760px;">Evolução dos Produtos<br>da Educação Superior</h2>
+                <p style="margin:0;color:rgba(255,255,255,0.82);font:600 16px/1.14 'Inter', 'Segoe UI', sans-serif;">Resultados e previsão de 2023 a 2026</p>
+              </div>
             </div>
-            <span class='rg2-stat-label'>crescimento<br>desde 2023</span>
+
+            <div style="justify-self:end;display:flex;flex-direction:column;align-items:flex-end;gap:4px;padding-top:2px;text-align:right;max-width:200px;min-width:0;">
+              <span style="color:#ffffff;font:800 11px/1 'Inter', sans-serif;letter-spacing:1.45px;text-transform:uppercase;">Panorama 2026</span>
+              <strong style="color:#dff0ff;font:800 44px/0.88 'Poppins', 'Inter', sans-serif;">36</strong>
+              <span style="color:rgba(255,255,255,0.88);font:600 12px/1.24 'Inter', sans-serif;">entregas monitoradas em avaliação, credenciamento, formação e publicação</span>
+            </div>
           </div>
 
-          <div class='rg2-card-stat rg2-card-stat--years'>
-            <div class='rg2-years-col'>
-              <div class='rg2-yrow'><small>2023</small><strong>${totals.y2023}</strong></div>
-              <div class='rg2-yrow'><small>2024</small><strong>${totals.y2024}</strong></div>
-              <div class='rg2-yrow'><small>2025</small><strong>${totals.y2025}</strong></div>
-              <div class='rg2-yrow rg2-yrow--hi'><small>2026 &#9733;</small><strong>${totals.y2026}</strong></div>
+          <div style="display:grid;grid-template-columns:minmax(0, 0.98fr) minmax(0, 1.22fr);gap:20px;align-items:stretch;min-height:0;overflow:hidden;">
+            <div style="display:flex;flex-direction:column;gap:12px;min-height:0;height:100%;overflow:hidden;">
+              <div style="border-radius:20px;background:linear-gradient(135deg, #032c4f 0%, #0f427e 100%);box-shadow:0 12px 22px rgba(0,0,0,0.18);padding:16px 18px 14px;display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden;min-height:0;height:100%;">
+                <div style="display:inline-flex;align-items:center;align-self:flex-start;padding:7px 13px;border-radius:999px;border:1px solid rgba(255,255,255,0.16);background:rgba(255,255,255,0.08);color:#ffffff;font:800 11px/1 'Inter', sans-serif;letter-spacing:1.35px;text-transform:uppercase;">Destaques</div>
+
+                <div style="position:relative;border-radius:16px;padding:13px 14px 11px;background:linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);border:1px solid rgba(255,255,255,0.08);min-height:118px;overflow:hidden;display:flex;align-items:flex-start;">
+                  <div style="position:absolute;left:22px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,0.58);text-shadow:0 6px 18px rgba(0,0,0,0.16);font:800 88px/0.88 'Poppins', 'Inter', sans-serif;letter-spacing:-2.8px;pointer-events:none;">29</div>
+                  <div style="position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;gap:8px;max-width:390px;margin:0 auto;min-height:92px;padding-left:84px;box-sizing:border-box;">
+                    <span style="color:#ffffff;font:800 22px/1.02 'Poppins', 'Inter', sans-serif;letter-spacing:-0.6px;">Avaliação de Cursos Superiores lidera a expansão.</span>
+                    <span style="color:rgba(255,255,255,0.84);font:500 13px/1.3 'Inter', sans-serif;">Crescimento contínuo entre 2023 e 2026, concentrando a maior evolução do portfólio regulatório.</span>
+                  </div>
+                </div>
+
+                <div style="display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:12px;align-items:stretch;">
+                  <div style="border-radius:16px;background:rgba(255,255,255,0.95);padding:12px 14px;box-shadow:0 12px 22px rgba(0,0,0,0.10);border:1px solid rgba(15,66,126,0.18);display:flex;flex-direction:column;justify-content:space-between;gap:7px;min-height:96px;box-sizing:border-box;">
+                    <div style="color:#081635;font:800 10px/1 'Inter', sans-serif;letter-spacing:1.35px;text-transform:uppercase;">Crescimento</div>
+                    <div style="color:#032c4f;font:800 34px/1 'Poppins', sans-serif;">+157%</div>
+                    <div style="color:#081635;font:600 11px/1.28 'Inter', sans-serif;opacity:0.88;">em relação ao total de 2023</div>
+                  </div>
+                  <div style="border-radius:16px;background:rgba(255,255,255,0.95);padding:12px 14px;box-shadow:0 12px 22px rgba(0,0,0,0.10);border:1px solid rgba(15,66,126,0.18);display:flex;flex-direction:column;justify-content:space-between;gap:7px;min-height:96px;box-sizing:border-box;">
+                    <div style="color:#081635;font:800 10px/1 'Inter', sans-serif;letter-spacing:1.35px;text-transform:uppercase;">Sinal de atenção</div>
+                    <div style="color:#032c4f;font:800 34px/1 'Poppins', sans-serif;">1</div>
+                    <div style="color:#081635;font:600 11px/1.28 'Inter', sans-serif;opacity:0.88;">última referência da Revista C&amp;T no período monitorado</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <span class='rg2-stat-label'>total de<br>entregas/ano</span>
+
+            <div style="border-radius:20px;background:rgba(255,255,255,0.96);box-shadow:0 12px 22px rgba(0,0,0,0.16);border:1px solid rgba(15,66,126,0.16);padding:16px 18px 12px;display:grid;grid-template-rows:auto minmax(0,1fr);gap:10px;min-height:0;overflow:hidden;box-sizing:border-box;">
+              <div style="display:flex;flex-direction:column;gap:10px;min-width:0;">
+                <div style="display:inline-flex;align-items:center;align-self:flex-start;padding:7px 13px;border-radius:999px;border:1px solid rgba(15,66,126,0.16);background:rgba(255,255,255,0.12);color:#081635;font:800 11px/1 'Inter', sans-serif;letter-spacing:1.35px;text-transform:uppercase;">Indicadores principais de 2026</div>
+                <div style="color:#032c4f;font:600 13px/1.22 'Inter', sans-serif;opacity:0.9;">Leitura rápida dos resultados monitorados</div>
+              </div>
+
+              <div style="display:grid;grid-template-columns:repeat(2, minmax(0, 1fr));gap:10px;align-items:stretch;min-height:0;">
+                <div style="border-radius:16px;background:linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%);border:1px solid rgba(15,66,126,0.18);box-shadow:0 12px 22px rgba(15,66,126,0.05);padding:12px 16px 10px;display:flex;flex-direction:column;justify-content:space-between;min-height:112px;">
+                  <div style="color:#081635;font:700 13px/1.18 'Inter', sans-serif;">Avaliação de Cursos</div>
+                  <div style="color:#032c4f;font:800 58px/0.9 'Poppins', 'Inter', sans-serif;letter-spacing:-2px;">29</div>
+                  <div style="color:#0f427e;font:700 10px/1 'Inter', sans-serif;letter-spacing:1.15px;text-transform:uppercase;opacity:0.92;">2026</div>
+                </div>
+
+                <div style="border-radius:16px;background:linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%);border:1px solid rgba(15,66,126,0.18);box-shadow:0 12px 22px rgba(15,66,126,0.05);padding:12px 16px 10px;display:flex;flex-direction:column;justify-content:space-between;min-height:112px;">
+                  <div style="color:#081635;font:700 13px/1.18 'Inter', sans-serif;">Credenciamento</div>
+                  <div style="color:#032c4f;font:800 58px/0.9 'Poppins', 'Inter', sans-serif;letter-spacing:-2px;">1</div>
+                  <div style="color:#0f427e;font:700 10px/1 'Inter', sans-serif;letter-spacing:1.15px;text-transform:uppercase;opacity:0.92;">2026</div>
+                </div>
+
+                <div style="border-radius:16px;background:linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%);border:1px solid rgba(15,66,126,0.18);box-shadow:0 12px 22px rgba(15,66,126,0.05);padding:12px 16px 10px;display:flex;flex-direction:column;justify-content:space-between;min-height:112px;">
+                  <div style="color:#081635;font:700 13px/1.18 'Inter', sans-serif;">Formação Continuada</div>
+                  <div style="color:#032c4f;font:800 58px/0.9 'Poppins', 'Inter', sans-serif;letter-spacing:-2px;">6</div>
+                  <div style="color:#0f427e;font:700 10px/1 'Inter', sans-serif;letter-spacing:1.15px;text-transform:uppercase;opacity:0.92;">2026</div>
+                </div>
+
+                <div style="border-radius:16px;background:linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%);border:1px solid rgba(15,66,126,0.18);box-shadow:0 12px 22px rgba(15,66,126,0.05);padding:12px 16px 10px;display:flex;flex-direction:column;justify-content:space-between;min-height:112px;">
+                  <div style="color:#081635;font:700 13px/1.18 'Inter', sans-serif;">Revista C&amp;T</div>
+                  <div style="color:#032c4f;font:800 58px/0.9 'Poppins', 'Inter', sans-serif;letter-spacing:-2px;">0</div>
+                  <div style="color:#0f427e;font:700 10px/1 'Inter', sans-serif;letter-spacing:1.15px;text-transform:uppercase;opacity:0.92;">2026</div>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div style="max-width:900px;color:rgba(255,255,255,0.92);font:600 16px/1.24 'Poppins', 'Inter', sans-serif;letter-spacing:-0.12px;padding-bottom:2px;">A expansão das avaliações demonstra fortalecimento da regulação, enquanto alguns produtos demandam reestruturação estratégica.</div>
         </div>
       </div>`;
     }
@@ -667,8 +667,185 @@ const slides = [
         </div>
       </div>`;
     }
+  },
+
+  /* ── Slide Mapa ETECs ── */
+  {
+    id: 'mapa-etecs',
+    theme: 'dark',
+    fullscreen: true,
+    duration: 20000,
+    enterAnim: 'enter-fade',
+    exitAnim: 'exit-fade',
+    eyebrow: '',
+    title: '',
+    subtitle: '',
+    accent: 'linear-gradient(90deg, #84b42e, #d2ef69)',
+    render() {
+      /*
+       * Contorno do Mato Grosso — coordenadas geográficas reais mapeadas para viewBox 900×575.
+       * lon [-61.5, -50.0] xScale=78.26 | lat [-6.5, -17.5] yScale=52.27
+       * x = (lon + 61.5) * 78.26   y = (-6.5 - lat) * 52.27
+       */
+      /*
+       * Path traçado do mapa de referência real (imagem com municípios MT).
+       * viewBox 900×575. Bbox ref: left=190,top=100,w=860,h=700
+       * xScale=1.047  yScale=0.821
+       * Inclui feição NW (Aripuanã), spike norte, lóbulo leste e península Cáceres.
+       */
+      const MT = 'M108,12 L150,26 L200,13 L244,0 L286,5 L348,9 L420,22 L453,30 L515,25 L588,38 L660,55 L745,83 L828,150 L892,206 L900,290 L892,364 L840,398 L808,413 L760,440 L723,453 L680,468 L638,478 L596,482 L555,490 L516,492 L474,492 L430,488 L390,492 L358,505 L325,510 L286,511 L244,502 L224,519 L202,544 L186,568 L170,575 L150,568 L117,544 L86,511 L64,486 L43,461 L22,430 L6,396 L0,363 L5,315 L11,265 L32,232 L54,198 L75,167 L86,134 L65,100 L28,59 L44,33 L75,16 L108,12 Z';
+
+      /*
+       * Posições lidas da imagem de referência (pins vermelhos).
+       * [nome, x, y, delay, labelDx, labelDy, anchor]
+       */
+      const cities = [
+        ['Alta Floresta',      389, 111, 0.7,   0,  22, 'middle'],
+        ['Barra do Garças',    713, 431, 2.4,   0,  22, 'middle'],
+        ['Cáceres',            268, 510, 1.8,   0,  22, 'middle'],
+        ['Campo Verde',        534, 439, 2.9,  28,   3, 'start' ],
+        ['Cuiabá',             440, 443, 0.4,   0, -21, 'middle'],
+        ['Diamantino',         393, 345, 1.1,   0, -21, 'middle'],
+        ['Juara',              315, 168, 2.1,   0,  22, 'middle'],
+        ['Lucas do Rio Verde', 419, 283, 0.9,   0,  22, 'middle'],
+        ['Matupá',             482, 111, 1.6,   0,  22, 'middle'],
+        ['Poxoréu',            556, 455, 3.1, -28,   3, 'end'   ],
+        ['Primavera do Leste', 572, 429, 2.6,  28,   3, 'start' ],
+        ['Rondonópolis',       536, 468, 2.0,   0,  22, 'middle'],
+        ['Sinop',              471, 213, 0.6,   0, -21, 'middle'],
+        ['Sorriso',            448, 247, 1.4,   0,  22, 'middle'],
+        ['Tangará da Serra',   315, 374, 1.9, -28,   3, 'end'   ],
+        ['Várzea Grande',      452, 455, 0.5,  28,   3, 'start' ],
+      ];
+
+      const pins = cities.map(([name, x, y, d, ldx, ldy, anchor]) => `
+        <g class="ms-pin" transform="translate(${x},${y})" style="animation-delay:${d}s">
+          <circle r="17" fill="rgba(32,90,230,0.18)" stroke="rgba(110,175,255,0.30)" stroke-width="1.5"/>
+          <circle r="12" fill="#0e205e" stroke="rgba(130,190,255,0.85)" stroke-width="1.8"/>
+          <image href="assets/etec.png" x="-9" y="-9" width="18" height="18"
+                 preserveAspectRatio="xMidYMid meet" clip-path="url(#ms-pin-clip)"/>
+          <text x="${ldx}" y="${ldy}" text-anchor="${anchor}" class="ms-lbl">${name}</text>
+        </g>`).join('');
+
+      return `
+      <div class="ms-wrap">
+
+        <div class="ms-header" data-anim="fade-down" data-delay="0.06">
+          <div class="ms-badge">ETECs • Mato Grosso</div>
+          <h2 class="ms-title">Onde Estamos</h2>
+          <p class="ms-desc">Nossa rede chega a 16 municípios estratégicos de Mato Grosso com educação profissional gratuita e presencial.</p>
+          <div class="ms-kpi">
+            <strong class="count-up" data-target="16">0</strong>
+            <span>municípios</span>
+          </div>
+        </div>
+
+        <div class="ms-map-area" data-anim="fade-up" data-delay="0.14">
+          <svg class="ms-svg" viewBox="0 0 900 575"
+               xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <clipPath id="ms-pin-clip" clipPathUnits="objectBoundingBox">
+                <circle cx="0.5" cy="0.5" r="0.5"/>
+              </clipPath>
+              <linearGradient id="ms-fill" x1="20%" y1="0%" x2="80%" y2="100%">
+                <stop offset="0%"   stop-color="#2a6ae8"/>
+                <stop offset="55%"  stop-color="#1848cc"/>
+                <stop offset="100%" stop-color="#0c2680"/>
+              </linearGradient>
+              <radialGradient id="ms-shine" cx="38%" cy="35%" r="52%">
+                <stop offset="0%"   stop-color="#60a0ff" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#1030a0" stop-opacity="0.00"/>
+              </radialGradient>
+              <filter id="ms-border-glow" x="-4%" y="-4%" width="108%" height="108%">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+              <filter id="ms-pin-shadow" x="-100%" y="-100%" width="300%" height="300%">
+                <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.65"/>
+              </filter>
+            </defs>
+
+            <!-- Estado: preenchimento sólido visível -->
+            <path d="${MT}" fill="url(#ms-fill)"/>
+            <!-- Brilho interno (radial) -->
+            <path d="${MT}" fill="url(#ms-shine)"/>
+            <!-- Contorno luminoso -->
+            <path d="${MT}" fill="none"
+                  stroke="rgba(148,210,255,0.92)" stroke-width="2.2" stroke-linejoin="round"
+                  filter="url(#ms-border-glow)"/>
+
+            <!-- Marcadores com sombra agrupada -->
+            <g filter="url(#ms-pin-shadow)">
+              ${pins}
+            </g>
+          </svg>
+
+          <div class="ms-zoom-controls">
+            <button class="ms-zoom-btn" onclick="msZoomMap(this,1)" title="Ampliar">+</button>
+            <button class="ms-zoom-btn" onclick="msZoomMap(this,-1)" title="Diminuir">−</button>
+            <button class="ms-zoom-btn ms-zoom-reset" onclick="msZoomMap(this,0)" title="Redefinir">↺</button>
+          </div>
+        </div>
+
+      </div>`;
+    }
   }
 ];
+
+window.msZoomMap = function(btn, dir) {
+  const svg = btn.closest('.ms-map-area').querySelector('.ms-svg');
+  let z = parseFloat(svg.dataset.zoom || '1');
+  if (dir === 1)  z = Math.min(z * 1.2, 4.0);
+  else if (dir === -1) z = Math.max(z / 1.2, 0.4);
+  else z = 1;
+  svg.dataset.zoom = z;
+  svg.style.transformOrigin = 'center center';
+  svg.style.transform = z === 1 ? '' : `scale(${z})`;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

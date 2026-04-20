@@ -603,3 +603,69 @@ img { max-width: 100%; display: block; }
 .page-frame.theme-light .progress-shell { background: rgba(28, 73, 175, 0.08); }
 .page-frame.theme-light .dot { background: rgba(28, 73, 175, 0.18); }
 .page-frame.theme-light .dot.active { background: linear-gradient(90deg, #2057c5, #2da7ff); }
+
+.page-shell.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) {
+  background: transparent;
+}
+
+.page-shell.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .ambient-a {
+  background: rgba(15, 66, 126, 0.28);
+}
+
+.page-shell.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .ambient-b {
+  background: rgba(3, 44, 79, 0.24);
+}
+
+.page-shell.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .ambient-c {
+  background: rgba(8, 22, 53, 0.28);
+}
+
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) {
+  background: linear-gradient(180deg, rgba(8, 22, 53, 0.96) 0%, rgba(2, 32, 60, 0.96) 56%, rgba(3, 44, 79, 0.96) 100%);
+  border-color: rgba(15, 66, 126, 0.34);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.30), inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]),
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) h1,
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) h2,
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) h3,
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) strong {
+  color: #f4f8ff;
+}
+
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) p,
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .slide-heading p,
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .brand-kicker,
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .footer-caption {
+  color: rgba(228, 239, 255, 0.70);
+}
+
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .brand-copy strong,
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .footer-meta {
+  color: rgba(244, 248, 255, 0.92);
+}
+
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .control-btn {
+  background: linear-gradient(180deg, rgba(15,66,126,0.18), rgba(8,22,53,0.22));
+  border-color: rgba(159, 195, 238, 0.26);
+  color: #f4f8ff;
+}
+
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .progress-shell {
+  background: rgba(159, 195, 238, 0.18);
+}
+
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .progress-glow {
+  background: linear-gradient(90deg, rgba(3,44,79,0.12), rgba(15,66,126,0.32), rgba(8,22,53,0.14));
+}
+
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .dot {
+  background: rgba(216, 232, 255, 0.26);
+}
+
+.page-frame.theme-light:has(.slide-surface[data-id="produtos-educacao-superior-2023-2026"]) .dot.active {
+  background: linear-gradient(90deg, #032c4f, #0f427e);
+  box-shadow: 0 0 18px rgba(15, 66, 126, 0.34);
+}
+
